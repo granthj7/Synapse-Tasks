@@ -46,16 +46,13 @@ players = [
     ChessPlayer("Beth Harmon", 20, 2500.34, 150, False)
 ]
 
-# Simulate matches
+
 for i in range(len(players)):
     for j in range(i+1, len(players)):
         for c in range(2):
             simulateMatch(players[i], players[j])
-
-
 print("Player\t\t\t\t\t\tScore")
 i=0
-#print("==============================")
 for player in players:
     if i==0:
         print(f"{player.name}\t\t\t{player.score}")
